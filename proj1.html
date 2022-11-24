@@ -1,0 +1,29 @@
+
+
+<html>
+    <body>
+        <form  onsubmit="saveToLocalStorage(event)">
+            <label> Choose expenseamount</label><br>
+            <input id='amount' type="text" name="amount"  required/><br>
+            <label> Choose description</label><br>
+            <input id='description' type="text" name="description"  required/><br>
+            <label> Choose category</label><br>
+            <select name="category" id="category">
+                <option value="volvo">Movie</option>
+                <option value="saab">Stationary</option>
+                <option value="mercedes">Fabrics</option>
+                <option value="audi">Vegetable</option>
+                
+              </select>
+           
+            <button> Add Expense </button>
+        </form>
+        <ul id='listOfUsers'></ul>
+        <script src="proj1.js">
+           
+
+        </script>
+
+
+    </body>
+</html>
