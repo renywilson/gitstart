@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>expense tracker</title>
+    </head>
+    <body>
+        <h3>Expense Tracker</h3>
+        <form id="myform" autocomplete="on">
+
+            
+            <label for="expensesum">Choose Expense Sum</label>
+            <input type="number" id="expensesum" required>
+            
+            
+            <label for="description">Choose Description</label>
+            <input type="text" id="description" required>
+                <label for="categorylist">Choose a Category </label>
+                    <input list="categorylist" id="category" name="category" required />
+                    <datalist id="categorylist">
+                                       
+                        <option value="Food" >Food</option>
+                      <option value="Shopping">Shopping</option>
+                      <option value="Cinema">Cinema</option>
+                      <option value="Travel">Travel</option>
+                      <option value="Groceries">Groceries</option>
+                      <option value="Dress">Dress</option>
+                    </datalist>
+        
+        
+            <input class="btn" type="submit" value="Add Expense">
+        </form>
+        <ul class="expense_details">
+       
+        </ul> 
+    </section>
+    
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="expensetrackerusingcrud.js"></script> 
+</html>
